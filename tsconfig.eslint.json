@@ -1,0 +1,15 @@
+{
+    "extends": "./tsconfig.json",
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "jest/**/*.ts",
+        "jest/**/*.ts",
+        "jest/**/*.tsx",
+        "storybook/**/*.ts",
+        "storybook/**/*.tsx",
+        "webpack/**/*.ts",
+        "webpack/**/*.tsx",
+        "typings/**/*.ts"
+    ]
+}

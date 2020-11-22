@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "target": "es5",
+        "module": "esnext",
+        "skipLibCheck": true,
+        "strict": true,
+        "jsx": "preserve",
+        "baseUrl": ".",
+        "experimentalDecorators": true,
+        "downlevelIteration": true,
+        "rootDirs": ["src", "stories"],
+        "paths": {
+            "*": ["typings/*"],
+            "antd": ["src/components/antd"],
+            "src/*": ["src/*"]
+        },
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "es5",
+            "es2015.promise",
+            "es6",
+            "es7",
+            "esnext"
+        ],
+        "typeRoots": ["node_modules/@types", "typings"]
+    },
+    "exclude": ["node_modules", "dist", "coverage", ".githooks"]
+}
