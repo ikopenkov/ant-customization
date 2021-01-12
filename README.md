@@ -1,14 +1,9 @@
-# Пример локальной кастомизации компонентов Ant Design с сохранением tree-shaking
+# The example of local modification of the Ant Design components and the bundle optimization
 
-## Запуск
+## Launch
 ```
 npm i && npm start
 ```
 
-## Antd
-Для изменения компонентов antd добавляем обертки в `src/components/antd` по аналогии с остальными. Дальше эти обернутые компоненты импортируются не напрямую, а как раньше в виде `import { OriginalAntComponent } from 'antd';`
-
-Чтобы это работало, нужно изменить алиас в файле `src/components/antd/index.ts`. Этот файл напрямую не импортируется, он используется тапйскриптом как алиас на `antd`, а так же при запуске вебпака из экспортов в нем создаются алиасы на обернуты файлы. Соответственно, чтобы новая обертка попала в сборку, нужно запустить сборку сначала, тогда обновятся алиасы. nodemon должен делать это автоматически, но стоит проверять.
-
-Важный момент: в обертке нужно импортировать оригинальный компонент с указанием индексного файла (например, `import AntTreeSelect from 'antd/lib/tree-select/index';`), иначе jest не видит этого файла и получает undefined.
-
+## Description
+See the full atricle: [RU](https://habr.com/ru/company/mailru/blog/530798/), EN
