@@ -6,4 +6,4 @@ npm i && npm start
 ```
 
 ## Description
-See the full atricle: [RU](https://habr.com/ru/company/mailru/blog/530798/), EN
+See the full atricle: [RU](https://habr.com/ru/company/mailru/blog/530798/), [EN](https://habr.com/ru/company/mailru/blog/537880/)
